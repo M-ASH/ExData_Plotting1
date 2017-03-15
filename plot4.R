@@ -36,7 +36,7 @@ Global_reactive_power <- as.numeric(as.character(data1$Global_reactive_power))
 
 par(mfrow=c(2,2))
 
-hist(GAP, main = "Global Active Power", xlab = "Global Active Power (kW)", col = "red", ylab = "Frequency")
+plot(datetime, Global_reactive_power, type ="l")
 
 plot(datetime, voltage, type ="l", main = "Voltage", xlab = "Day")
 plot(datetime, GAP, type = "l", main ="Global Active Power", ylab = "Global Active Power (kW)", xlab = "Day")
